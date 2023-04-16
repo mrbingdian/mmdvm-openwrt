@@ -10,7 +10,7 @@ DMRIDFILE=/etc/mmdvm/DMRIds.dat
 DMRIDFILE_TMP=/tmp/DMRIds.dat
 
 # Full version
-# curl 'https://www.radioid.net/static/users.csv' 2>/dev/null | awk -F ',' '{print $1"\t"$2"\t"$3"\t"$4"\t"$6}'  > ${DMRIDFILE}
+# curl 'https://www.radioid.net/static/user.csv' 2>/dev/null | awk -F ',' '{print $1"\t"$2"\t"$3"\t"$4"\t"$6}'  > ${DMRIDFILE}
 
 # Pre-formatted version to speedup the update process
 wget -O ${DMRIDFILE_TMP}.gz http://downloads.ostar.me/radioid/DMRIds.dat.gz
